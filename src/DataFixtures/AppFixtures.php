@@ -5,7 +5,6 @@ namespace App\DataFixtures;
 use App\Entity\Comment;
 use App\Entity\Stop;
 use App\Entity\Trip;
-use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
