@@ -3,7 +3,7 @@
   --font-text: "Loved by the King", cursive;
   --font-text2: "Covered By Your Grace", cursive;
   --color1: rgba(195,41,94,255);
-  --color2: rgb(108 16 40);
+  --color2: rgb(82 132 135);
 }
 
 .dela-gothic-one-regular {
@@ -42,6 +42,9 @@ body {
             background-color: rgba(245, 245, 220, 0.3);
             h1 {
                 margin-left: 5%;
+                text-align: center;
+                width: 30vw;
+                padding-top: 1vh;
             }
             ul {
                 display: flex;
@@ -50,6 +53,8 @@ body {
                 text-transform: uppercase;
                 li {
                     margin: 5%;
+                    width: 7vw;
+                    text-align: center;
                     a {
                         text-decoration: none;
                         color: black;
@@ -64,7 +69,7 @@ body {
 
     main {
         .index {
-            background-image: url("https://images.unsplash.com/photo-1577083753695-e010191bacb5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-image: url("https://images.unsplash.com/photo-1612278675615-7b093b07772d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
             background-position: center;
             background-size: cover;
             height: 55vh;
