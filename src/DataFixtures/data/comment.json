@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Wow, this place looks amazing! I’ve always wanted to visit.",
+    "created_at": "2025-07-01T14:23:00Z",
+    "stop": 1
+  },
+  {
+    "content": "Great photo! What camera did you use?",
+    "created_at": "2025-07-02T09:45:00Z",
+    "stop": 1
+  },
+  {
+    "content": "Love how detailed your post is. Super helpful for planning my trip!",
+    "created_at": "2025-07-03T17:30:00Z",
+    "stop": 2
+  },
+  {
+    "content": "This brings back memories from my trip last year!",
+    "created_at": "2025-07-04T11:10:00Z",
+    "stop": 3
+  },
+  {
+    "content": "Was it easy to find vegetarian food there?",
+    "created_at": "2025-07-05T08:20:00Z",
+    "stop": 3
+  },
+  {
+    "content": "Can’t wait to hike that trail. Thanks for sharing the map link!",
+    "created_at": "2025-07-06T15:00:00Z",
+    "stop": 4
+  }
+]

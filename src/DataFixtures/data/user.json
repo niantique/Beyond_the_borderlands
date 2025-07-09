@@ -1,0 +1,32 @@
+[
+  {
+    "username": "WanderWithMe",
+    "password": "travel123",
+    "email": "wanderwithme@journeys.com",
+    "picture": "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "username": "NomadicNina",
+    "password": "globetrot456",
+    "email": "nina@nomads.net",
+    "picture": "https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "username": "PassportTales",
+    "password": "explore789",
+    "email": "passport.tales@travellogs.com",
+    "picture": "https://images.unsplash.com/photo-1594583388237-911c593badee?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "username": "JetSetJules",
+    "password": "flyaway321",
+    "email": "jules@jetsetlife.org",
+    "picture": "https://images.unsplash.com/photo-1546877625-cb8c71916608?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "username": "BackpackDiaries",
+    "password": "diarypass888",
+    "email": "diaries@backpacking.world",
+    "picture": "https://images.unsplash.com/photo-1544570768-c01eb520ee37?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+]

@@ -1,3 +1,128 @@
+:root {
+  --font-main: "Dela Gothic One", sans-serif;
+  --font-text: "Loved by the King", cursive;
+  --font-text2: "Covered By Your Grace", cursive;
+  --color1: rgba(195,41,94,255);
+  --color2: rgb(108 16 40);
+}
+
+.dela-gothic-one-regular {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.loved-by-the-king-regular {
+  font-family: "Loved by the King", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.covered-by-your-grace-regular {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
 body {
-    background-color: skyblue;
+
+    header {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            background-color: rgba(245, 245, 220, 0.3);
+            h1 {
+                margin-left: 5%;
+            }
+            ul {
+                display: flex;
+                list-style: none;
+                margin-right: 10%;
+                text-transform: uppercase;
+                li {
+                    margin: 5%;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    a:hover {
+                        color: var(--color2);
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .index {
+            background-image: url("https://images.unsplash.com/photo-1577083753695-e010191bacb5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-position: center;
+            background-size: cover;
+            height: 55vh;
+            h1 {
+                padding-top: 85vh;
+                font-size: 1.5em;
+                padding-left: 20vw;
+                padding-right: 43vw;
+                text-align: justify;
+                font-family: var(--font-text2);
+                line-height: 1.3;
+                font-weight: 100;
+            }
+        }
+        .indexDescription {
+            display: flex;
+            padding-left: 20vw;
+            padding-right: 20vw;
+            height: 30vh;
+            text-transform: uppercase;
+            padding-top: 5vh;
+            background-color: var(--color2);
+            p:first-child {
+                padding-right: 2vw;
+                width: 100vw;
+                font-size: 1.8em;
+            }
+            p:last-child {
+                font-size: 0.9em;
+                text-align: justify;
+                width: 190%;
+            }
+        }
+        .join {
+            background-color: var(--color2);
+            text-align: center;
+            height: 10vh;
+            a {
+                text-decoration: none;
+                padding: 10px 20px 10px 20px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                color: black;
+                background-color: var(--color2);
+                border: 1px solid black;
+            }
+            a:hover {
+                color: var(--color2);
+                background-color: white;
+            }
+        }
+
+    }
+
+    footer {
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: var(--color2);
+    }
 }

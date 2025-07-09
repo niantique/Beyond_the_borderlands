@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Exploring the Alps",
+    "description": "A week of hiking, cheese tasting, and breathtaking mountain views in Switzerland.",
+    "destination": "Switzerland",
+    "startDate": "2025-06-01T09:00:00Z",
+    "endDate": "2025-06-08T18:00:00Z",
+    "image": "https://images.unsplash.com/photo-1463693396721-8ca0cfa2b3b5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "user": 1
+  },
+  {
+    "title": "Tokyo Lights and Sushi Nights",
+    "description": "Cultural adventures, neon cityscapes, and unforgettable food experiences.",
+    "destination": "Japan",
+    "startDate": "2025-04-15T10:00:00Z",
+    "endDate": "2025-04-25T20:00:00Z",
+    "image": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "user": 2
+  },
+  {
+    "title": "Nomadic Sands of Morocco",
+    "description": "From Marrakech markets to Sahara dunes on camelback—pure magic.",
+    "destination": "Morocco",
+    "startDate": "2025-03-10T08:30:00Z",
+    "endDate": "2025-03-20T19:00:00Z",
+    "image": "https://images.unsplash.com/photo-1536237717235-0acadb345d8c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "user": 3
+  },
+  {
+    "title": "Backpacking Patagonia",
+    "description": "Glaciers, lakes, and remote beauty in Chilean Patagonia.",
+    "destination": "Chile",
+    "startDate": "2025-11-05T07:00:00Z",
+    "endDate": "2025-11-18T21:00:00Z",
+    "image": "https://images.unsplash.com/photo-1557543878-042c9857f39e?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "user": 4
+  },
+  {
+    "title": "Italian Coast Road Trip",
+    "description": "From Rome to Amalfi—pizza, pasta, beaches and Vespa vibes.",
+    "destination": "Italy",
+    "startDate": "2025-05-12T10:00:00Z",
+    "endDate": "2025-05-22T18:00:00Z",
+    "image": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "user": 5
+  }
+]

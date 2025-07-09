@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Arrival in Zurich",
+    "content": "Landed in Zurich and strolled along the Limmat River. First impressions: clean, scenic, and very efficient!",
+    "date": "2025-06-01T14:00:00Z",
+    "location": "Zurich",
+    "image": "https://images.unsplash.com/photo-1657137436880-e906b111b040?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "trip": 1
+  },
+  {
+    "title": "Hiking the Matterhorn",
+    "content": "Challenging but unforgettable hike. Snow-capped peaks and crisp air made this a highlight.",
+    "date": "2025-06-03T10:00:00Z",
+    "location": "Zermatt",
+    "image": "https://images.unsplash.com/photo-1693152940548-99f64f8a0a3d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "trip": 1
+  },
+  {
+    "title": "Shibuya Scramble",
+    "content": "Got lost in the organized chaos of Tokyo. Tried ramen at Ichiran and saw the crossing lit up at night.",
+    "date": "2025-04-16T19:30:00Z",
+    "location": "Tokyo",
+    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "trip": 2
+  },
+  {
+    "title": "Desert Under the Stars",
+    "content": "Camped in the Sahara. The sunset over the dunes was surreal, and the stars were the brightest I’ve ever seen.",
+    "date": "2025-03-15T21:00:00Z",
+    "location": "Sahara Desert",
+    "image": "https://images.unsplash.com/photo-1559586616-361e18714958?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "trip": 3
+  },
+  {
+    "title": "Patagonian Sunrise",
+    "content": "Woke up early to catch the sunrise over Torres del Paine. The silence and color were unforgettable.",
+    "date": "2025-11-08T06:45:00Z",
+    "location": "Torres del Paine",
+    "image": "https://images.unsplash.com/photo-1494783329112-4a6795291178?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "trip": 4
+  },
+  {
+    "title": "Amalfi Dreaming",
+    "content": "Cliffside views, lemon groves, and gelato by the sea. Italy never disappoints.",
+    "date": "2025-05-15T16:00:00Z",
+    "location": "Amalfi",
+    "image": "https://images.unsplash.com/photo-1583844056361-4418a8f2a985?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "trip": 5
+  }
+]
