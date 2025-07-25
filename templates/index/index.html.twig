@@ -3,13 +3,12 @@
 {% block title %}BEYOND THE BORDERLANDS{% endblock %}
 
 {% block body %}
-<div class="index"></div>
+<div class="index">
 <div class="indexDescription">
 <p>A peaceful space to reflect on your journeys, create a travel journal.</p>
-<p>This is your personal space to capture the moments that matter most on your travels. Whether you're exploring distant countries or discovering hidden gems close to home, our platform helps you turn those experiences into a beautifully organized travel journal.
-Write about your adventures, add photos, and keep track of the places you've been. </p>
+{# <p>This is your personal space to capture the moments that matter most on your travels. Whether you're exploring distant countries or discovering hidden gems close to home, our platform helps you turn those experiences into a beautifully organized travel journal.
+Write about your adventures, add photos, and keep track of the places you've been. </p> #}
+<a href="{{ path('register') }}">Start now</a>
 </div>
-<div class="join">
-<a href="{{ path('index') }}">Join us</a>
 </div>
 {% endblock %}

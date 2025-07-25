@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Trip List{% endblock %}
+
+{% block body %}
+
+<div class="trip">
+    <ul>
+        {% for trip in trips %}
+            <li>
+                <a href="{{ path('trip_read', { id: trip.id }) }}" class="trip-link">
+                    <div class="image-wrapper">
+                        <img src="{{ trip.image }}" alt="trip image" class="trip-image">
+                        <div class="destination-overlay">{{ trip.destination }}</div>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+{# <ul>
+{% for trip in trips %}
+<li>
+<img src="{{ trip.image }}" alt="trip image">
+<div>
+<a href="{{ path('trip_read', { id: trip.id }) }}">
+<h1>{{ trip.title }}</h1>
+<h2>{{ trip.destination }}</h2>
+<p>{{ trip.startDate|date('d M Y') }} / {{ trip.endDate|date(' d M Y') }}</p>
+</a>
+</div>
+</li>
+
+{% endfor %}
+</ul> #}
+{% endblock %}

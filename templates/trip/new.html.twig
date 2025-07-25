@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title%}Create a Trip{% endblock %}
+
+{% block body %}
+<div class="createTripBackground">
+
+<div class="createTrip">
+<h1>Create a new trip</h1>
+
+{{ form_start(tripForm) }}
+
+<div class="form-field">
+  {{ form_label(tripForm.title) }}<br>
+  {{ form_widget(tripForm.title) }}
+  {{ form_errors(tripForm.title) }}
+</div>
+
+<div class="form-field">
+  {{ form_label(tripForm.description) }}<br>
+  {{ form_widget(tripForm.description) }}
+  {{ form_errors(tripForm.description) }}
+</div>
+
+<div class="form-field">
+  {{ form_label(tripForm.destination) }}<br>
+  {{ form_widget(tripForm.destination) }}
+  {{ form_errors(tripForm.destination) }}
+</div>
+
+<div class="formFieldDate">
+  <div class="date-field">
+    {{ form_label(tripForm.startDate) }}
+    {{ form_widget(tripForm.startDate) }}
+    {{ form_errors(tripForm.startDate) }}
+  </div>
+  <div class="date-field">
+    {{ form_label(tripForm.endDate) }}
+    {{ form_widget(tripForm.endDate) }}
+    {{ form_errors(tripForm.endDate) }}
+  </div>
+</div>
+
+
+<div class="form-field">
+  {{ form_label(tripForm.image) }}<br>
+  {{ form_widget(tripForm.image) }}
+  {{ form_errors(tripForm.image) }}
+</div>
+
+<button class="buttonCreateTrip">Let's go</button>
+
+{{ form_end(tripForm) }}
+
+</div>
+</div>
+{% endblock %}

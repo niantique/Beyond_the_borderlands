@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit User{% endblock %}
+
+{% block body %}
+<div class="user">
+<div class="userEditMain">
+<h1><span>{{ user.username }}</span><br>edit your account ?</h1>
+
+<div class="userEdit">
+{% if user.picture %}
+<img src="{{ asset('uploads/user/' ~ user.picture) }}" alt="user picture">
+{% endif %}
+
+{{ form_start(form) }}
+
+{{ form_label(form.username) }}
+{{ form_widget(form.username) }}
+{{ form_errors(form.username) }}
+<br>
+{{ form_label(form.email) }}
+{{ form_widget(form.email) }}
+{{ form_errors(form.email) }}
+<br>
+{# <p class="picture">Change picture</p> #}
+<div>
+<p>Upload a new picture</p>
+{{ form_widget(form.picture) }}
+{{ form_errors(form.picture) }}
+</div>
+<div>
+<p>Provide an image URL</p>
+<input type="text" name="picture_url" value=""></div>
+
+<button type="submit" class="userEditButton">Save changes</button>
+
+{% for message in app.flashes('success') %}
+        <div>{{ message }}</div>
+{% endfor %}
+
+{{ form_end(form) }}
+</div>
+<a href="{{ path('trip') }}">Back to Trips</a>
+</div>
+</div>
+{% endblock %}
