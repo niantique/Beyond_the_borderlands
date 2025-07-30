@@ -8,8 +8,11 @@
 <h1><span>{{ user.username }}</span><br>edit your account ?</h1>
 
 <div class="userEdit">
+
 {% if user.picture %}
-<img src="{{ asset('uploads/user/' ~ user.picture) }}" alt="user picture">
+<img src="{{ asset('uploads/user/' ~ user.picture) }}" alt="Uploaded picture">
+{% elseif user.pictureUrl %}
+<img src="{{ user.pictureUrl }}" alt="URL picture">
 {% endif %}
 
 {{ form_start(form) }}
@@ -30,7 +33,9 @@
 </div>
 <div>
 <p>Provide an image URL</p>
-<input type="text" name="picture_url" value=""></div>
+{{ form_widget(form.pictureUrl) }}
+{{ form_errors(form.pictureUrl) }}
+</div>
 
 <button type="submit" class="userEditButton">Save changes</button>
 

@@ -40,7 +40,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(length: 255)]
     private ?string $picture = null;
+    #[ORM\Column(length:255, nullable:true)]
+    private ?string $pictureUrl = null;
 
+    public function getPictureUrl(): ?string {
+        return $this->pictureUrl;
+    }
+    public function setPictureUrl(?string $pictureUrl): static {
+        $this->pictureUrl = $pictureUrl;
+        return $this;
+    }
     /**
      * @var Collection<int, Comment>
      */
@@ -149,7 +158,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->picture;
     }
 
-    public function setPicture(string $picture): static
+    public function setPicture(?string $picture): static
     {
         $this->picture = $picture;
 

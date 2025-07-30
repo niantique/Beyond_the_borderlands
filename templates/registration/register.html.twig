@@ -1,30 +1,43 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Log in{% endblock %}
 
 {% block body %}
-    {% for flash_error in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
-    {% endfor %}
-    <div class="register">
-    <h1>Register</h1>
+<div class="logInBackground">
+  <div class="logIn">
+    <h1>Please sign in</h1>
 
-    <div class="registerForm">
+    {% if error %}
+      <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
 
-    {{ form_errors(registrationForm) }}
+    {% if app.user %}
+      <div class="userLogIn">
+        You are logged in as <span>{{ app.user.userIdentifier }}</span>. <br>
+        <a href="{{ path('app_logout') }}">Logout</a>
+      </div>
+    {% endif %}
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.username) }}
-        {{ form_row(registrationForm.email)}}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.picture )}}
-        {{ form_row(registrationForm.pictureUrl)}}
-        {{ form_row(registrationForm.agreeTerms) }}
+    <form method="post">
+      <div class="form-field">
+        <label for="username">Username</label><br>
+        <input type="text" value="{{ last_username }}" name="_username" id="username" class="form-control" autocomplete="username" required autofocus>
+      </div>
 
-        <button type="submit" class="registerButton">Register</button>
-    {{ form_end(registrationForm) }}
-    </div>
-    </div>
+      <div class="form-field">
+        <label for="password">Password</label><br>
+        <input type="password" name="_password" id="password" class="form-control" autocomplete="current-password" required>
+      </div>
+
+      <input type="hidden" name="_csrf_token" data-controller="csrf-protection" value="{{ csrf_token('authenticate') }}">
+
+      <div class="form-field">
+        <input type="checkbox" name="_remember_me" id="_remember_me">
+        <label for="_remember_me">Remember me</label>
+      </div>
+
+      <button type="submit" class="buttonLogIn">Sign in</button>
+    </form>
+  </div>
+</div>
 {% endblock %}

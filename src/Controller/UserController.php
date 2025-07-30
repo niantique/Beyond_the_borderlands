@@ -32,6 +32,21 @@ final class UserController extends AbstractController
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
+            $uploadedFile = $form->get('picture')->getData();
+            $pictureUrl = $form->get('pictureUrl')->getData();
+
+            if ($uploadedFile) {
+                $newFilename = uniqid(). '.'. $uploadedFile->guessExtension();
+                $uploadedFile->move(
+                    $this->getParameter('user_pictures_directory'),
+                    $newFilename
+                );
+                $user->setPicture($newFilename);
+                $user->setPictureUrl(null);
+            } else if ($pictureUrl) {
+                $user->setPictureUrl($pictureUrl);
+                $user->setPicture(null);
+            }
             $em->flush();
             $this->addFlash('success', 'Profile updated');
             return $this->redirectToRoute('user_edit', ['id' => $user->getId()]);

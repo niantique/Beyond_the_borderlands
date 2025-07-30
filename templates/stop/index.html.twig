@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add a Stop{% endblock %}
+
+{% block body %}
+<div class="createStopBackground">
+
+<div class="createStop">
+<h1>Add a stop to <span>{{ trip.title }}</span></h1>
+
+{{ form_start(form) }}
+
+<div class="form-field">
+  {{ form_label(form.title) }}<br>
+  {{ form_widget(form.title) }}
+  {{ form_errors(form.title) }}
+</div>
+
+<div class="form-field">
+  {{ form_label(form.content) }}<br>
+  {{ form_widget(form.content) }}
+  {{ form_errors(form.content) }}
+</div>
+
+<div class="form-field">
+  {{ form_label(form.location) }}<br>
+  {{ form_widget(form.location) }}
+  {{ form_errors(form.location) }}
+</div>
+
+<div class="date-field">
+  {{ form_label(form.date) }}
+  {{ form_widget(form.date) }}
+  {{ form_errors(form.date) }}
+</div>
+
+<div class="form-field">
+  {{ form_label(form.image) }}<br>
+  {{ form_widget(form.image) }}
+  {{ form_errors(form.image) }}
+</div>
+
+<div class="form-field">
+  {{ form_label(form.imageFile) }}<br>
+  {{ form_widget(form.imageFile) }}
+  {{ form_errors(form.imageFile) }}
+</div>
+
+<button class="buttonCreateStop">Add Stop</button>
+
+<a href="{{ path('trip_read', {'id': trip.id}) }}" class="backLink">← Back to Trip</a>
+
+{{ form_end(form) }}
+
+</div>
+
+</div>
+{% endblock %}

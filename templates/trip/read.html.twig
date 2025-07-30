@@ -44,6 +44,9 @@
         {% else %}
             <p>No stops have been added to this trip yet.</p>
         {% endif %}
+        {% if app.user and trip.user and app.user.id == trip.user.id %}
+<a href="{{ path('stop', {'id': trip.id}) }}" class="buttonAddStop">Add a stop to this trip</a>
+{% endif %}
     </section>
 
     <footer class="tripAuthor">

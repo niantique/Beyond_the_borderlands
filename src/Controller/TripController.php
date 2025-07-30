@@ -46,7 +46,7 @@ final class TripController extends AbstractController
 
             $this->addFlash('success', 'Trip created successfully !');
 
-            return $this->redirectToRoute('trip');
+            return $this->redirectToRoute('stop', ['id' => $trip->getId()]);
         }
 
         return $this->render('trip/new.html.twig', [
